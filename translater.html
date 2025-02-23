@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <style>
+        .qwe{
+            display:flex;
+            flex-direction: column;
+            background-color: aqua;
+            width:400px;
+
+        }
+        button{
+            background-color: blue;
+            color:white;
+        }
+        #translator{
+            margin:10px;
+            background-color: rgb(0, 255, 17);
+            height:10px;
+            padding:105px;
+        }
+        body{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>LOGIN FORM</h1>
+    <form class="qwe">
+        <label>NAME:</label>
+        <input type="text" placeholder="ENTER YOUR NUMBER">
+        <label>EMAIL</label>
+        <input type="email" placeholder="ENTER YOUR EMAIL">
+        <label>ENTER YOUR LOCATION</label>
+        <input type="text" placeholder="ENTER YOUR LOCATION">
+        <button>submit</button>
+    </form>
+    <div id="translator"></div>
+<script>
+    function googleTranslateElementInit(){
+        new google.translate.TranslateElement('translator',{pageLanguage:'en'});
+    }
+</script>
+    
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>   
+       
+</body>
+</html>
